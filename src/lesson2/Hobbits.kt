@@ -1,6 +1,7 @@
 package lesson2
 
 fun main() {
+    
     val hobbits = arrayOf("Frodo", "Sam", "Merry", "Pippin")
     var x = 0
 

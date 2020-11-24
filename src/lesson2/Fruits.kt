@@ -1,6 +1,7 @@
 package lesson2
 
 fun main() {
+
     val fruit = arrayOf("Apple", "Banana", "Cherry", "Blueberry", "Pomegranate")
     val index = arrayOf(1, 3, 4, 2)
     var x = 0

@@ -1,6 +1,7 @@
 package lesson2
 
 fun main() {
+
     val firemen = arrayOf("Pugh", "Max", "Barney McGrew", "Cuthbert", "Dibble", "Grub")
     var firemanNo = 0
 
