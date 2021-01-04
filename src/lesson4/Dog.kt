@@ -2,7 +2,7 @@ package lesson4
 
 class Dog (
         val name: String,
-        private val weight: Int,
+        weight_param: Int,
         breed_param: String
 ) {
     init {
@@ -12,6 +12,11 @@ class Dog (
     var activities = arrayOf("Walks")
 
     val breed = breed_param.toUpperCase()
+
+    private var weight = weight_param
+        set(value) {
+            if (value > 0) field = value
+        }
 
     init {
         println("The breed is $breed")
