@@ -1,6 +1,6 @@
 package lesson5
 
-open class Animal {
+abstract class Animal {
     open val image = ""
     open val food = ""
     open val habitat = ""
