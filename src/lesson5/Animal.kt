@@ -1,20 +1,18 @@
 package lesson5
 
-abstract class Animal {
-    open val image = ""
-    open val food = ""
-    open val habitat = ""
+import lesson6.Roamable
+
+abstract class Animal : Roamable {
+    abstract val image: String
+    abstract val food: String
+    abstract val habitat: String
     var hunger = 10
 
-    open fun makeNoise() {
-        println("The Animal is making a noise")
-    }
+    abstract fun makeNoise()
 
-    open fun eat() {
-        println("The Animal is eating")
-    }
+    abstract fun eat()
 
-    open fun roam() {
+    override fun roam() {
         println("The Animal is roaming")
     }
 
