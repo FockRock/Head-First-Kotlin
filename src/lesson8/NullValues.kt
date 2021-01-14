@@ -37,4 +37,12 @@ fun main() {
     var myWolf = MyWolf()
     myWolf?.wolf?.hunger = 8
     println("The value of myWolf?.wolf?.hunger is ${myWolf?.wolf?.hunger}")
+
+    var myArray = arrayOf("Hi", "Hello", null)
+    for (item in myArray) {
+        item?.let { println(it) }
+    }
+
+    getAlphaWolf()?.let { it.eat() }
+
 }
