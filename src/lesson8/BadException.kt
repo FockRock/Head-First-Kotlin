@@ -27,4 +27,5 @@ fun riskyCode(test: String) {
 
 fun main() {
     myFunction("Yes")
+    myFunction("No")
 }
