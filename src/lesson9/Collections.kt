@@ -23,9 +23,18 @@ fun main() {
     mShoppingList = mShoppingSet.toMutableList()
     println("New Shopping List: $mShoppingList")
 
-    val r1 = Recipe ("Chicken Soup")
-    val r2 = Recipe ("Cesar Salad")
+    val r1 = Recipe("Chicken Soup")
+    val r2 = Recipe("Cesar Salad")
     val r3 = Recipe("Thai Curry")
-    val r4 = Recipe ("Sausage")
-    val r5 = 
+    val r4 = Recipe("Sausage")
+    val r5 = Recipe("Pasta")
+    val mRecipeMap = mutableMapOf("Recipe1" to r1, "Recipe2" to r2, "Recipe3" to r3)
+    println("Recipe Map original: $mRecipeMap")
+
+    val recipesToAdd = mapOf("Recipe4" to r4, "Recipe5" to r5)
+    mRecipeMap.putAll(recipesToAdd)
+    println("Recipe Map updated: $mRecipeMap")
+    if (mRecipeMap.containsKey("Recipe1")) {
+        println("Recipe1 is: ${mRecipeMap.getValue("Recipe1")}")
+    }
 }
