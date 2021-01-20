@@ -28,5 +28,19 @@ class Contest<T: Pet> {
 }
 
 fun main() {
+    val catTwix = Cat ("Twix")
+    val catMax = Cat ("Max")
+    val catSox = Cat ("Sox")
 
+    val catContest = Contest<Cat>()
+    catContest.addScore(catTwix, 100)
+    catContest.addScore(catSox, 30)
+    catContest.addScore(catMax, 50)
+    val topCat = catContest.getWinners().first()
+    println("Cat contest winner is ${topCat.name}")
+
+    val dogRetailer: Retailer<Dog> = DogRetailer()
+    val catRetailer: Retailer<Cat> = CatRetailer()
+    val petRetailer: Retailer<Pet> = DogRetailer()
+    petRetailer.sell()
 }
